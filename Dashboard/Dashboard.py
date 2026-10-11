@@ -81,9 +81,9 @@ def apply_theme(fig, height=420):
 # ==========================================
 # 1. CARGA DE DATOS BASE
 # ==========================================
-df_movies = pd.read_csv("CSV procesados/netflix_movies_clean.csv")
-df_tv = pd.read_csv("CSV procesados/netflix_tv_clean.csv")
-df_financial = pd.read_csv("CSV procesados/netflix_movies_financial_clean.csv")
+df_movies = pd.read_csv("data/processed/netflix_movies_clean.csv")
+df_tv = pd.read_csv("data/processed/netflix_tv_clean.csv")
+df_financial = pd.read_csv("data/processed/netflix_movies_financial_clean.csv")
 
 df_movies['tipo'] = 'Película'
 df_tv['tipo'] = 'Serie TV'
