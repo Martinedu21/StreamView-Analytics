@@ -154,7 +154,7 @@ def fig_box(d):
 
 def fig_valgen(d):
     t = M.valoracion_genero(d)
-    titulo = "Valoración mediana por género (mín. 100 títulos con votos)"
+    titulo = "Calidad percibida por género y tipo de contenido (mín. 100 títulos con votos)"
     if t.empty:
         return vacio(titulo, "Ningún género alcanza 100 títulos con votos en esta selección.")
     orden = t.groupby("genero")["mediana"].max().sort_values().index.tolist()
